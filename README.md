@@ -1,7 +1,7 @@
-# Simplified SCAM Project
+#  SCAM Project
 
 ## Overview
-The **Simplified Side-Channel Attack Monitoring (SCAM)** project is designed to detect and mitigate Spectre-like side-channel attacks in real-time. It leverages accessible software-based metrics and threshold-based analysis to identify suspicious activity in virtualized environments such as **Windows Subsystem for Linux (WSL2)**, where hardware-level performance counters are unavailable.
+The **Side-Channel Attack Monitoring (SCAM)** project is designed to detect and mitigate Spectre-like side-channel attacks in real-time. It leverages accessible software-based metrics and threshold-based analysis to identify suspicious activity in virtualized environments such as **Windows Subsystem for Linux (WSL2)**, where hardware-level performance counters are unavailable.
 
 SCAM is a simplified yet effective approach to mitigating threats using noise injection techniques to disrupt potential attackers. This tool can be integrated into cloud environments to enhance security, making it ideal for virtualized systems and environments without access to specialized hardware.
 
@@ -112,10 +112,6 @@ Logs are saved in the `logs/scam.log` file. You can monitor this file to observe
 
 ## Configuration
 - **Thresholds for Detection**: The thresholds for CPU, memory, and I/O are configured within `sca_detection_service.py`. You can tune these thresholds based on the system's baseline performance.
-
-## Known Limitations
-- **Simplified Detection**: The current threshold-based detection may not handle sophisticated Spectre attacks involving subtle variations in CPU activity.
-- **Limited Metrics**: Without hardware-level counters, SCAM relies on software metrics, which may be less precise.
 
 ## Future Enhancements
 - **Machine Learning-Based Detection**: Replace the threshold-based approach with an ML-based model for more accurate detection.
